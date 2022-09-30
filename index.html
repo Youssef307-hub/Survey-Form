@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please Fill This Survey Form!</p>
+    
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Enter Your Name: <input type="text" id="name" placeholder="Name" required/></label>
+
+          <label for="email" id="email-label">Enter Your Email: <input type="email" id="email" placeholder="Email@example.com" required/></label>
+
+          <label for="number" id="number-label">Enter Your Birth Year: <input type="number" id="number" min="10" max="100" placeholder="22" required/></label>
+
+          <label for="dropdown">Select Your Gender: </label>
+          <select id="dropdown" required>
+            <option value="0">Gender</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
+          <hr class="line">
+        </fieldset>
+
+        <fieldset>
+
+          <label>You are: </label>
+          <label for="student"><input type="radio" id="student" name="student-graduated" value="1"> Student</label>
+
+          <label for="graduated"><input type="radio" name="student-graduated" id="graduated" value="2"> Graduated</label>
+          <hr class="line">
+          <label>Reason for Joining us: </label>
+          <label for="reason1"><input type="checkbox" name="reason" id="reason1" value="1"> To improve my skills</label>
+
+          <label for="reason2"><input type="checkbox" name="reason" id="reason2" value="2"> Just for fun</label>
+
+          <hr class="line">
+          <label for="suggestion">Do you suggest any improvments? <textarea id="suggestion" name="suggestion" rows="3" cols="4" placeholder="I suggest to imporve ..."></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+
+  </body>
+</html>
